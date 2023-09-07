@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw1</title>
+    <script src="cars.js"></script>
+</head>
+
+<body>
+
+    <script>
+
+        let brand = prompt("Enter brand:");
+        let model = prompt("Enter model:");
+        let price = prompt("Enter price:");
+        let licensePlate = prompt("Enter license plate number:");
+        let productionYear = prompt("Enter production year:");
+        let color = prompt("Enter color:");
+
+        let maintenanceYears = [];
+        for (let i = 0; i < 3; i++) {
+            let maintenanceYear = prompt("Enter maintenance year:");
+            maintenanceYears.push(maintenanceYear);
+        }
+
+
+        let car = new Car(brand, model, price, licensePlate, productionYear, color, maintenanceYears);
+        document.write(JSON.stringify(car));
+
+    </script>
+</body>
+
+</html>

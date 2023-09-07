@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>hw2</title>
+    <script src="Phone.js"></script>
+</head>
+
+<body>
+    <script>
+
+
+        function createPhone(manufacturer, model, color, batteryPercentage, storageCapacity, isOn) {
+            return new Phone(manufacturer, model, color, batteryPercentage, storageCapacity, isOn);
+        }
+
+
+
+
+        
+        // דוגמה ליצירת אובייקט מסוג Phone
+        const myPhone = createPhone("Apple", "iPhone 12", "White", 75, 128, true);
+        document.write(JSON.stringify(myPhone));
+
+
+    </script>
+</body>
+
+</html>
